@@ -49,4 +49,51 @@ header{
 }
 .logo {
     font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--main-color);
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+
+}
+.nav-link{
+    font-size: 0.89rem;
+    padding: 4px 8px;
+    border-radius: 0.2rem;
+    color: var(--bg-color);
+}
+.nav-link:hover{
+    color: var(--main-color);
+    background: var(--container-color);
+    transition: 0.3s all linear;
+}
+/* MENU ICON */
+.menu-icon{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+    cursor: pointer;
+    z-index: 200;
+    transition: 0.3s;
+}
+.menu-icon div{
+    display: block;
+    background: var(--bg-color);
+    height: 2px;
+    width: 24px;
+    transition: 0.3s;
+}
+.move .line1{
+    transform: rotate(-45deg) translate(-5px,5px);
+}
+.move .line2{
+    opacity: 0;
+
+}
+.move .line3{
+    transform: rotate(45deg) translate(-5px,-5px);
 }
