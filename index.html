@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maxdev</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
 </head>
 <body>
     <!-- Header -->
@@ -28,18 +30,77 @@
         </div>
     </header>
     <!-- Home -->
-    <section class="home container" id="home">
+    <section class="home container="home">
         <div class="home-content">
             <div class="home-img">
-                <img src="./img/profile.png" alt="profile">
-                <div class="home-text">
-                    <h3>
-                        ¡Hello world!
-                    </h3>
-                    <h2>I'm <span class="color">Maximiliano</span></h2>
+                <img src="img/profile.png" alt="">
+            </div>
+            <div class="home-text">
+                <h3>¡Hola!</h3>
+                <h2>Soy <span class="color">Maximiliano</span></h2>
+                <p>
+                    Soy estudiante de <span class="color">"Desarrollo web"</span> en Coderhouse y de la carrera de <span class="color">"Programación Web Full Stack" en Digitalhouse</span>.
+                </p>
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
         </div>
+    </section>
+    <!-- About -->
+    <section class="about container" id="about">
+        <!-- Heading -->
+        <h2 class="heading">About</h2>
+        <!-- About content -->
+        <div class="about-content">
+            <div class="about-data">
+                <span>Sobre mi</span>
+                <h2>Desarrollo Web<br></h2>
+                <a href="./CV.pdf" class="btn" download="">
+                    Descargar CV
+                    <i class="fa-solid fa-download"></i>
+                </a>
+            </div>
+            <div class="about-text">
+                <p>¡Hola! Soy Maximiliano Frias. Desarrollador y diseñador web junior.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam illum atque omnis!</p>
+            </div>
+        </div>
+    </section>
+    <section class="services container" id="services">
+        <!-- Heading -->
+        <h2 class="heading">Services</h2>
+        <!-- Services -->
+        <div class="services-content">
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i>
+                <h2>
+                    Desarrollo Web
+                </h2>
+                <p>Con conocimiento en tecnologías esenciales para el desarrollo como lo son Html 5, Css 3 y Js. </p>
+                <div class="dev-icons">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-js"></i>
+                </div>
+
+            </div>
+            <div class="services-box">
+                <i class="fa-solid fa-brush"></i>
+                <h2>
+                    Diseño Web
+                </h2>
+                <p>También dispongo de herramientas que hacen que el diseño sea mucho más personalizado, balanceando entre un diseño funcional y agradable a la vista. Siempre siguiendo las necesidades del cliente.</p>
+                <div class="dev-icons2">
+                    <i class="fa-brands fa-figma"></i>
+                    <i class="fa-brands fa-bootstrap"></i>
+                </div>
+
+            </div>
+        </div>
+
     </section>
 
 
