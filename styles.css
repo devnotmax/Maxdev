@@ -238,6 +238,9 @@ header{
     text-align: justify;
     margin-bottom: 1.5rem;
 }
+.about-text span{
+    color: var(--main-color);
+}
 /* Services */
 .services-content{
     display: grid;
@@ -283,5 +286,60 @@ header{
 }
 .services-box:hover{
     transform: scale(1.05);
+    transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/* Portfolio */
+
+.portfolio-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+.portfolio-box{
+   position: relative;
+   width: 100%;
+   height: 320px;
+   border-radius: 1rem;
+   overflow: hidden; 
+}
+.portfolio-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+.portfolio-overlay{
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: hsl(234,45%,16%,0.7);
+}
+.portfolio-overlay h2{
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.portfolio-overlay i{
+    font-size: 19px;
+    padding: 10px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    border-radius: 4px;
+
+}
+.portfolio-overlay i:hover{
+    background: #546eff;
+    transition: 0.3s all linear;
+}
+.portfolio-box:hover .portfolio-overlay{
+    top: 0;
     transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
