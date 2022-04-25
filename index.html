@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="styles.css">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Shortcut icon -->
+    <link rel="shortcut icon" href="./img/favicon.png">
 </head>
 <body>
     <!-- Header -->
@@ -36,12 +38,12 @@
                 <img src="img/profile.png" alt="">
             </div>
             <div class="home-text">
-                <h3>¡Hola mundo! 
+                <h3>¡Hola mundo!
                     <i class="fa-solid fa-code"></i>
                 </h3>
                 <h2>Soy <span class="color">Maximiliano</span></h2>
                 <p>
-                    Soy estudiante de <span class="color">"Desarrollo web"</span> en Coderhouse y de la carrera de <span class="color">"Programación Web Full Stack" en Digitalhouse</span>.
+                    Estudiante de <span class="color">"Desarrollo web"</span> en Coderhouse y de la carrera de <span class="color">"Programación Web Full Stack" en Digitalhouse</span>.
                 </p>
                 <div class="social">
                     <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -135,11 +137,62 @@
             </div>
         </div>
     </section>
+    <!-- Contact form -->
+    <section class="contact container" id="contact">
+        <!-- Heading -->
+        <h2 class="heading">Contact</h2>
+        <!-- Contact form -->
+        <form action="" class="contact-form" id="contact-form">
+            <input type="text" aria-placeholder="Nombre" class="name" placeholder="Nombre">
+            <input type="email" name="" id="" placeholder="Email" class="email">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje" class="message"></textarea>
+            <input type="submit" value="Enviar" class="send-btn">
+
+        </form>
+    </section>
+    <!-- Footer -->
+    <section class="footer container" id="footer">
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="mailto:develop.maxsj@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="donate-link">
+            <h4>¡Invitame un café si gustas apoyar para mi educación!</h4>
+            <div class="buymeacoffee">
+                <a href="https://www.buymeacoffee.com/developmax" target="_new">
+                    <img src="./img/buymeacoffee1.png" alt="buymeacoffee">
+                </a>
+                <a href="https://cafecito.app/devnotmax" target="_new">
+                    <img src="./img/cafecito.png" alt="cafecito>
+                </a>
+            </div>
+            <!-- CAFECITO!!! -->
+
+        </div>
+        <p>@Devnotmax</p>
+    </section>
+        
+    
+
 
 
 
 
     <!-- Link JS -->
     <script src="./js/main.js"></script>
+    <!-- EMAIL JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- SWEET ALERT -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('iPRv89yfDgTBZbFWw');
+        })();
+    </script>
+
 </body>
 </html>

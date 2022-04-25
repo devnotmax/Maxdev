@@ -292,9 +292,10 @@ header{
 /* Portfolio */
 
 .portfolio-content{
+    position: absolute;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 7rem;
 }
 .portfolio-box{
    position: relative;
@@ -342,4 +343,88 @@ header{
 .portfolio-box:hover .portfolio-overlay{
     top: 0;
     transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/* Footer */
+.footer{
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1.4rem;
+    padding: 30px 0;
+    margin-top: 100px;
+}
+
+.footer p{
+    color: var(--main-color);
+}
+
+/* Donate link */
+.donate-link{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+}
+.donate-link h4{
+    color: var(--main-color);
+}
+.buymeacoffee{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+}
+.donate-link img{
+    width: 8rem;
+    height: 3rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 4rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 30px;    
+}
+.donate-link img:hover{
+    
+    transform: scale(1.05);
+    transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+/* Contact form */
+.contact {
+    margin-top: 830px;
+}
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    row-gap: 1rem;
+}
+.contact-form input,.contact-form textarea{
+   border: none;
+   outline: none;
+   font-size: 0.9rem;
+   padding: 15px;
+   color: var(--bg-color);
+   background-color: var(--box-color);
+   border-radius: 0.4rem;
+}
+.contact-form .send-btn{
+    width: 120px;
+    height: 50px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 12px;
+    background: var(--main-color);
+    cursor: pointer;
+    justify-items: center;
+}
+.contact-form .send-btn:hover {
+    background: #546eff;
+    transition: 0.2s all linear;
 }
