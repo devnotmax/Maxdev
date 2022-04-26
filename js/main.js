@@ -1,34 +1,57 @@
 let menu = document.querySelector('.menu-icon');
+let navbar = document.querySelector('.navbar')
+//Para que se abra el menu responsive
 
 menu.onclick = () => {
-    menu.classList.toggle('move')
+    navbar.classList.toggle("open-menu");
+    menu.classList.toggle("move");
+};
+    
+
+/* Form */
+
+/* variables */
+const email = document.querySelector('#email')
+const nombre = document.querySelector('#nombre')
+const mensaje = document.querySelector('#mensaje')
+
+/* Botones */
+
+const btnEnviar = document.querySelector('#enviar')
+
+
+escuchadorEventos()
+
+function escuchadorEventos(){
+    document.addEventListener('DOMContentLoaded', iniciarWebApp)
+    
+    email.addEventListener('blur', validarinformacion)
+    nombre.addEventListener('blur', validarinformacion)
+    mensaje.addEventListener('blur', validarinformacion)
 }
 
-
-/* Email js */
-function validate() {
-    let name = document.querySelector(".name");
-    let email = document.querySelector(".email");
-    let msg = document.querySelector(".message");
-    let sendBtn = document.querySelector(".send-btn");
-
-    sendBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        if (name.value == "" || email.value == "" || msg.value == ""){
-            emptyerror();
-        } else{
-            sendmail (name.value, email.value, msg.value);
-            success();
-        }
-    });
+function iniciarWebApp(){
+    console.log('Iniciando Web App!')
+    btnEnviar.disabled = true
 }
-validate();
 
-function emptyerror() {
-    Swal.fire({
-        title: 'Error!',
-        text: 'Do you want to continue',
-        icon: 'error',
-        confirmButtonText: 'Cool'
-      })
+function validarinformacion(elemento){
+    //console.log('te saliste del input')
+    if(elemento.target.value.length > 0){
+        console.log('Si hay info')
+        elemento.target.classList.remove('error-mostrar')
+        elemento.target.classList.add('correcto')
+    }
+    else{
+        console.log('no hay info')
+        elemento.target.classList.remove('correcto')
+        elemento.target.classList.add('error-mostrar')
+        mostrarError()
+    }
+
+    
+}
+
+function mostrarError(){
+    
 }
