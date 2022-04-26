@@ -32,7 +32,7 @@
         </div>
     </header>
     <!-- Home -->
-    <section class="home container="home">
+    <section class="home container" id="home">
         <div class="home-content">
             <div class="home-img">
                 <img src="img/profile.png" alt="">
@@ -43,12 +43,12 @@
                 </h3>
                 <h2>Soy <span class="color">Maximiliano</span></h2>
                 <p>
-                    Estudiante de <span class="color">"Desarrollo web"</span> en Coderhouse y de la carrera de <span class="color">"Programación Web Full Stack" en Digitalhouse</span>.
+                    Estudiante de <span class="color">"Desarrollo web"</span> en Coderhouse y me gustaria seguir la carrera de <span class="color">"Front end developer"</span>.
                 </p>
                 <div class="social">
                     <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/devnotmax"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/not_moreno/" target="new_"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
         </div>
@@ -69,7 +69,9 @@
             </div>
             <div class="about-text">
                 <p>¡Hola! Soy Maximiliano Frias. Desarrollador y diseñador web junior.</p>
-                <p>Tengo 19 años, disfruto mucho del aire libre y pasar el tiempo con amigos. Mi mayor objetivo es aumentar mi conocimiento en las diferentes tecnologías y convertirme en un <span class="color">Front end Developer.</span> </p>
+                <p>Tengo 19 años, disfruto mucho del aire libre y pasar el tiempo con amigos. Mi mayor objetivo es aumentar mi conocimiento en las diferentes tecnologías y convertirme en un <span class="color">Front end Developer.</span> <br>
+                Aun no he tenido la suerte de participar en un grupo de trabajo, ni en ningun proyecto importante, pero estoy muy interesado en hacerlo. En la sección "Portfolio" tenes disponibles algunos de mis proyectos personales<br>
+                <span class="color">Descarga mi cv si estas interesado :)</span></p> 
             </div>
         </div>
     </section>
@@ -143,10 +145,10 @@
         <h2 class="heading">Contact</h2>
         <!-- Contact form -->
         <form action="" class="contact-form" id="contact-form">
-            <input type="text" aria-placeholder="Nombre" class="name" placeholder="Nombre">
-            <input type="email" name="" id="" placeholder="Email" class="email">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje" class="message"></textarea>
-            <input type="submit" value="Enviar" class="send-btn">
+            <input type="text" class="name" placeholder="Nombre" id="nombre">
+            <input type="email" name="" id="email" placeholder="Email" class="email" required>
+            <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Mensaje" class="message" required></textarea>
+            <input type="submit" value="Enviar" class="send-btn" id="enviar">
 
         </form>
     </section>
@@ -155,44 +157,26 @@
         <div class="social">
             <a href="#"><i class="fa-brands fa-twitter"></i></a>
             <a href="mailto:develop.maxsj@gmail.com"><i class="fa-regular fa-envelope"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/devnotmax"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/not_moreno/"><i class="fa-brands fa-instagram"></i></a>
         </div>
         <div class="donate-link">
-            <h4>¡Invitame un café si gustas apoyar para mi educación!</h4>
+            <h4>¡Invitame un café si gustas apoyar para mi educación! :)</h4>
             <div class="buymeacoffee">
                 <a href="https://www.buymeacoffee.com/developmax" target="_new">
                     <img src="./img/buymeacoffee1.png" alt="buymeacoffee">
                 </a>
                 <a href="https://cafecito.app/devnotmax" target="_new">
-                    <img src="./img/cafecito.png" alt="cafecito>
+                    <img src="./img/cafecito.png" alt="buymeacoffee">
                 </a>
             </div>
-            <!-- CAFECITO!!! -->
-
         </div>
         <p>@Devnotmax</p>
     </section>
-        
-    
 
-
-
-
-
-    <!-- Link JS -->
-    <script src="./js/main.js"></script>
-    <!-- EMAIL JS -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <!-- SWEET ALERT -->
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    
-    <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init('iPRv89yfDgTBZbFWw');
-        })();
-    </script>
-
+<!-- Link js -->
+<script src="js/main.js"></script>
+<!-- Sweet alert -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>
