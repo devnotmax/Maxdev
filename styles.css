@@ -214,6 +214,36 @@ header{
     font-weight: 700;
     margin: 1rem 0;
 }
+.certification-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 28px;
+}
+.googleActivate h3{
+    font-size: 1rem;
+}
+.googleActivate span{
+    text-transform: none;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+.googleActivate img{
+    width: 100px;
+    border-radius: .5rem;
+}
+.coderHouse h3{ 
+    font-size: 1rem;
+}
+.coderHouse span{
+    text-transform: none;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+.coderHouse img{
+    width: 100px;
+    border-radius: .5rem;
+}
 .btn{
     font-size: 0.97rem;
     display: inline-flex;
@@ -295,7 +325,7 @@ header{
     position: absolute;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 7rem;
+    gap: 2rem;
 }
 .portfolio-box{
    position: relative;
