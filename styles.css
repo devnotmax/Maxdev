@@ -7,6 +7,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     scroll-padding-top: 2rem;
+    max-width: 1000vh;
 }
 /* Vars (You can change colors here) */
 :root{
@@ -20,6 +21,7 @@
 body{
     color: var(--bg-color);
     background: var(--body-color);
+    overflow-x: hidden;
 
 }
 a{
@@ -370,6 +372,11 @@ header{
     background: #546eff;
     transition: 0.3s all linear;
 }
+.portfolio-overlay p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
 .portfolio-box:hover .portfolio-overlay{
     top: 0;
     transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -545,6 +552,9 @@ form .correcto{
         display: block;
         margin: 1rem 0;
     }
+    body{
+        overflow-x: hidden;
+     }
 }
 @media (max-width:635px){
     .about-content{
@@ -563,7 +573,9 @@ form .correcto{
         font-size: 0.825rem;
         margin-bottom: 1.3rem;
     }
-
+    body{
+        overflow-x: hidden;
+     }
 }
 @media (max-width:450px){
     .home {
@@ -597,4 +609,7 @@ form .correcto{
     .portfolio-content {
         grid-template-columns: 1fr;
     }
+    body{
+        overflow-x: hidden;
+     }
 }
